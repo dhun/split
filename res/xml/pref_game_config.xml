@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:split="http://schemas.android.com/apk/res/jp.gr.java_conf.dhun.split"
+    >
+
+    <!-- ボール -->
+    <PreferenceCategory
+        android:title="@string/pref_category_ball"
+        >
+
+        <!-- ボールの分裂数 -->
+        <jp.gr.java_conf.dhun.split.ui.preference.SeekbarPreference
+            android:key          ="@string/pref_splitCount_key"
+            android:title        ="@string/pref_splitCount_title"
+            android:summary      ="@string/pref_splitCount_summary"
+            android:dialogTitle  ="@string/pref_splitCount_dialogTitle"
+            android:defaultValue ="2"
+            split:min="2"
+            split:max="10"
+            split:unit="@string/pref_splitCount_unit"
+            />
+
+        <!-- ボールの大きさ -->
+        <jp.gr.java_conf.dhun.split.ui.preference.SeekbarPreference
+            android:key          ="@string/pref_ballSize_key"
+            android:title        ="@string/pref_ballSize_title"
+            android:summary      ="@string/pref_ballSize_summary"
+            android:dialogTitle  ="@string/pref_ballSize_dialogTitle"
+            android:defaultValue ="50"
+            split:min="25"
+            split:max="80"
+            split:unit="@string/pref_ballSize_unit"
+            />
+
+        <!-- ボールの表面 -->
+        <ListPreference
+            android:key          ="@string/pref_ballFaceType_key"
+            android:title        ="@string/pref_ballFaceType_title"
+            android:summary      ="@string/pref_ballFaceType_summary"
+            android:dialogTitle  ="@string/pref_ballFaceType_dialogTitle"
+            android:entries      ="@array/pref_ballFaceType_entries"
+            android:entryValues  ="@array/pref_ballFaceType_entryValues"
+            android:defaultValue ="@string/pref_ballFaceType_RANDOM_COLOR"
+            />
+
+        <!-- クリップボールの画像 -->
+        <jp.gr.java_conf.dhun.split.ui.preference.BallImagePreference
+            android:key          ="@string/pref_clipBallImage_key"
+            android:title        ="@string/pref_clipBallImage_title"
+            android:summary      ="@string/pref_clipBallImage_summary"
+            android:dialogTitle  ="@string/pref_clipBallImage_dialogTitle"
+            /><!-- TODO: android:dependencyが有効になるようにする -->
+            <!--             android:dependency   ="@string/pref_ballFaceType_key"-->
+
+    </PreferenceCategory>
+
+    <!-- サウンド -->
+    <PreferenceCategory
+        android:title="@string/pref_category_sound"
+        >
+
+        <!-- BGM -->
+        <CheckBoxPreference
+            android:key          ="@string/pref_soundBgm_key"
+            android:title        ="@string/pref_soundBgm_title"
+            android:summaryOn    ="@string/pref_soundBgm_summaryOn"
+            android:summaryOff   ="@string/pref_soundBgm_summaryOff"
+            android:defaultValue ="true"
+            />
+
+        <!-- SE -->
+        <CheckBoxPreference
+            android:key          ="@string/pref_soundSe_key"
+            android:title        ="@string/pref_soundSe_title"
+            android:summaryOn    ="@string/pref_soundSe_summaryOn"
+            android:summaryOff   ="@string/pref_soundSe_summaryOff"
+            android:defaultValue ="true"
+            />
+
+    </PreferenceCategory>
+
+    <!-- ハイスコア -->
+    <PreferenceCategory
+        android:title="@string/pref_category_highScore"
+        >
+
+        <!-- エントリダイアログの表示 -->
+        <CheckBoxPreference
+            android:key          ="@string/pref_showEntryDialog_key"
+            android:title        ="@string/pref_showEntryDialog_title"
+            android:summaryOn    ="@string/pref_showEntryDialog_summaryOn"
+            android:summaryOff   ="@string/pref_showEntryDialog_summaryOff"
+            android:defaultValue ="true"
+            />
+
+        <!-- ユーザ名 -->
+        <jp.gr.java_conf.dhun.split.ui.preference.RecognizerEditTextPreference
+            android:key          ="@string/pref_userName_key"
+            android:title        ="@string/pref_userName_title"
+            android:summary      ="@string/pref_userName_summary"
+            android:dialogTitle  ="@string/pref_userName_dialogTitle"
+            android:dialogMessage="@string/pref_userName_dialogMessage"
+            android:defaultValue ="anonymous"
+            />
+
+        <Preference
+            android:key          ="@string/pref_resetHighScore_key"
+            android:title        ="@string/pref_resetHighScore_title"
+            android:summary      ="@string/pref_resetHighScore_summary"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

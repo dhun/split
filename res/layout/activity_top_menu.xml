@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@raw/menu_title"
+        />
+
+    <TextView
+        android:id="@+id/lbl_normal_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lbl_normal_mode"
+        />
+
+    <TextView
+        android:id="@+id/lbl_endress_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lbl_endress_mode"
+        />
+
+    <TextView
+        android:id="@+id/lbl_game_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lbl_game_record"
+        />
+
+    <TextView
+        android:id="@+id/lbl_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lbl_option"
+        />
+
+</LinearLayout>

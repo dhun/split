@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Split</string>
+
+
+<!-- トップメニュー -->
+    <string name="lbl_normal_mode">ノーマルモード</string>
+    <string name="lbl_endress_mode">エンドレスモード</string>
+    <string name="lbl_game_record">これまでの成績</string>
+    <string name="lbl_option">オプション設定</string>
+
+<!-- ゲームレコード -->
+    <string name="lbl_entry_name">名前</string>
+    <string name="lbl_touched_count">タッチ回数</string>
+    <string name="lbl_maxball_count">最大ボール数</string>
+    <string name="rad_sort_touched_count">タッチ回数順</string>
+    <string name="rad_sort_maxball_count">最大ボール数順</string>
+
+
+<!-- オプション設定 -->
+    <string name="pref_category_ball">ボール</string>
+    <string name="pref_category_sound">サウンド</string>
+    <string name="pref_category_highScore">ハイスコア</string>
+
+    <!-- ボールの分裂数 -->
+    <string name="pref_splitCount_key">splitCount</string>
+    <string name="pref_splitCount_title">ボールの分裂数</string>
+    <string name="pref_splitCount_summary">ボールをタッチしたときの分裂数を設定します\n現在の設定値は[%1$d]個です</string>
+    <string name="pref_splitCount_dialogTitle"></string>
+    <string name="pref_splitCount_unit">個</string>
+
+    <!-- ボールの大きさ -->
+    <string name="pref_ballSize_key">ballSize</string>
+    <string name="pref_ballSize_title">ボールの大きさ</string>
+    <string name="pref_ballSize_summary">ボールを大きさを設定します\n現在の設定値は[%1$d]ピクセルです</string>
+    <string name="pref_ballSize_dialogTitle"></string>
+    <string name="pref_ballSize_unit">ピクセル</string>
+
+    <!-- ボールの表面 -->
+    <string name="pref_ballFaceType_key">ballFaceType</string>
+    <string name="pref_ballFaceType_title">ボールの表面</string>
+    <string name="pref_ballFaceType_summary">ボールの表面に表示する内容を設定します\n現在の設定値は[%1$s]です</string>
+    <string name="pref_ballFaceType_dialogTitle"></string>
+    <string name="pref_ballFaceType_RANDOM_COLOR">RANDOM_COLOR</string>
+    <string name="pref_ballFaceType_IMAGE_CLIP">IMAGE_CLIP</string>
+    <string-array name="pref_ballFaceType_entries">
+        <item>ランダムカラー</item>
+        <item>クリップした画像</item>
+    </string-array>
+    <string-array name="pref_ballFaceType_entryValues">
+        <item>@string/pref_ballFaceType_RANDOM_COLOR</item>
+        <item>@string/pref_ballFaceType_IMAGE_CLIP</item>
+    </string-array>
+
+    <!-- クリップボールの画像 -->
+    <string name="pref_clipBallImage_key">clipBallImage</string>
+    <string name="pref_clipBallImage_title">ボールの画像</string>
+    <string name="pref_clipBallImage_summary">ボールの表面に表示する画像を登録します\n[%1$d]個が登録されています</string>
+    <string name="pref_clipBallImage_dialogTitle"></string>
+    <string name="pref_clipBallImage_start_hint">メニューから画像を選択／加工できます</string>
+    <string name="pref_clipBallImage_appended">追加しました</string>
+    <string name="pref_clipBallImage_deleted" >削除しました</string>
+    <!--
+    <string name="pref_clipBallImage_confirm_on_ok">変更内容を登録してダイアログを閉じます</string>
+    <string name="pref_clipBallImage_confirm_on_cancel">変更内容を登録しないでダイアログを閉じます</string>
+    -->
+    <string name="pref_clipBallImage_err_no_image_on_append">追加するクリップ画像がありません\n画像変更メニューから素材となる画像を指定してください</string>
+    <string name="pref_clipBallImage_err_no_image_on_delete">削除するクリップ画像がありません</string>
+    <string name="pref_clipBallImage_menu_change_image">画像変更</string>
+    <string name="pref_clipBallImage_menu_reset_size"  >サイズリセット</string>
+    <string name="pref_clipBallImage_menu_rotate_left" >左に回転</string>
+    <string name="pref_clipBallImage_menu_rotate_right">右に回転</string>
+    <string name="pref_clipBallImage_menu_detecte_face">顔認識</string>
+    <string name="pref_clipBallImage_face_detecte_dialog">顔認識処理を実行中です</string>
+    <string name="pref_clipBallImage_face_detecte_fail">認識できませんでした\n画像の向きを確認してください.</string>
+
+    <!-- BGM -->
+    <string name="pref_soundBgm_key">soundBgm</string>
+    <string name="pref_soundBgm_title">BGM</string>
+    <string name="pref_soundBgm_summaryOn" >BGMは有効です</string>
+    <string name="pref_soundBgm_summaryOff">BGMは無効です</string>
+
+    <!-- SE -->
+    <string name="pref_soundSe_key">soundSe</string>
+    <string name="pref_soundSe_title">効果音</string>
+    <string name="pref_soundSe_summaryOn" >効果音は有効です</string>
+    <string name="pref_soundSe_summaryOff">効果音は無効です</string>
+
+    <!-- エントリダイアログの表示 -->
+    <string name="pref_showEntryDialog_key">showEntryDialog</string>
+    <string name="pref_showEntryDialog_title">エントリダイアログの表示</string>
+    <string name="pref_showEntryDialog_summaryOn" >ハイスコアを達成したときにネームエントリダイアログを表示します</string>
+    <string name="pref_showEntryDialog_summaryOff">ハイスコアを達成したときにネームエントリダイアログを表示しません。ハイスコアは自動的に保存されます</string>
+
+    <!-- ユーザ名 -->
+    <string name="pref_userName_key">userName</string>
+    <string name="pref_userName_title">あなたの名前</string>
+    <string name="pref_userName_summary">ハイスコアを自動保存するときに名前を設定します\n現在の設定値は[%1$s]です</string>
+    <string name="pref_userName_dialogTitle"></string>
+    <string name="pref_userName_dialogMessage"></string>
+
+    <!-- ハイスコアのリセット -->
+    <string name="pref_resetHighScore_key">resetHighScore</string>
+    <string name="pref_resetHighScore_title">ハイスコアのリセット</string>
+    <string name="pref_resetHighScore_summary">ハイスコアをすべて削除します</string>
+    <string name="pref_resetHighScore_deleted">削除しました</string>
+
+    <string name="pref_info_clipImage">
+「クリップした画像」モードで遊ぶには、「ボールの画像」から画像を登録してください
+    </string>
+
+
+
+<!-- ゲーム -->
+    <string name="error_config_ballImagesEmpty">
+ボールの表面に「クリップした画像」が選択されていますが、ボール画像が登録されていません\n
+「ランダムカラー」で動作します\n
+\n
+「クリップした画像」モードで遊ぶには、オプション設定の「ボールの画像」から画像を登録してください
+    </string>
+    <string name="game_lbl_store">Score</string>
+    <string name="game_lbl_high_score">High Score</string>
+    <string name="game_lbl_curball_count">ボール数(現在):</string>
+    <string name="game_lbl_maxball_count">ボール数(最高):</string>
+    <string name="game_lbl_touched_count">タッチした回数:</string>
+    <string name="game_lbl_rest_seconds">Time:</string>
+    <string name="game_lbl_estimate_fps">FPS:</string>
+    <string name="game_lbl_updated">更新！</string>
+    <string name="game_lbl_gamestate1_ready">ready</string>
+    <string name="game_lbl_gamestate1_pausing">pause</string>
+    <string name="game_lbl_gamestate1_leaved">game over</string>
+    <string name="game_lbl_gamestate1_timeup">time up</string>
+    <string name="game_lbl_gamestate2_ready">touch to start</string>
+    <string name="game_lbl_gamestate2_pausing">touch to restart</string>
+    <string name="game_lbl_gamestate2_leaved">touch to replay</string>
+    <string name="game_lbl_gamestate2_timeup">touch to replay</string>
+    <string name="game_menu_restart">再開</string>
+
+
+<!-- ネームエントリ -->
+    <string name="empty_string"></string>
+    <string name="dialog_title">レコード更新</string>
+    <string name="dialog_message">レコードを更新しました。\n・最大ボール数：%2$s\n・タッチの回数：%1$s\n名前を入力してください。</string>
+    <string name="dialog_chkDontShowThisDialog">今後このダイアログを表示しない</string>
+    <string name="dialog_rank">%1$d位</string>
+    <string name="dialog_out_of_rank">ランク外</string>
+    <string name="dialog_recognizer_msg">名前をお話しください</string>
+    <string name="dialog_recognizer_err">この端末では音声認識機能がサポートされていません</string>
+    <string name="dialog_validation_err_username">ユーザ名を入力してください</string>
+</resources>
