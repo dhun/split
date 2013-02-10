@@ -35,6 +35,8 @@ public class ClipPictureView extends FrameLayout {
     private static final String TAG = ClipPictureView.class.getSimpleName();
     private static final float DEFAULT_CLIP_AREA_SIZE = 50;
 
+    private static final int FACE_DETECTOR_AREA_VISIBILITY = View.INVISIBLE;
+
     private enum DRAG_MODE {
         NONE,
         /** クリップ領域の移動 */
@@ -87,6 +89,7 @@ public class ClipPictureView extends FrameLayout {
 
         // 顔認識用オーバレイのイメージビュー
         faceOverlayView = (ImageView) findViewById(R.id.faceOverlayImageView);
+        faceOverlayView.setVisibility(FACE_DETECTOR_AREA_VISIBILITY);
 
         // ズームコントローラ
         // 背景画像のサイズを１クリックにつき１割増減
