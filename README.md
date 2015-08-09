@@ -13,6 +13,22 @@
 
 ![](doc/option.png)
 
+## インストール手順 ##
+```shell
+PATH=%PATH%:~/app/android-sdk/platform-tools
+adb devices
+adb -d install Split.apk
+```
+
+tablet側の設定：
+* アプリケーション. 開発. USBデバッグ＝On
+* 無線とネットワーク. USB接続＝MTPモード
+
+tips：
+```shell
+mount -o rw,remount /dev/block/mtdblock3 /system
+```
+
 ## アプリが要求する権限 ##
 
 * 端末のバイブレーションのみ。
